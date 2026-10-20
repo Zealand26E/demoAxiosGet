@@ -15,7 +15,21 @@
       <div class="nav-bar"></div>
 
       <h1>{{ intro }}</h1>
-      <button v-on:click="getAllPosts" >tryk</button>
+
+      <button v-on:click="getAllPosts" >Hent alle posts</button>
+      <br />
+
+      <input v-model="postId" type="text" placeholder="Indtast post id" />
+      <br>
+
+      <button v-on:click="getOnePost" >Hent en post</button>
+
+      <ul>
+        <li v-for="post in postslist" :key="post.id">
+          title: {{ post.title }} - userid: {{ post.userId }} - id: {{ post.id }}
+        </li>
+      </ul>
+
 
     </div>
 
