@@ -8,6 +8,9 @@ const app = Vue.createApp({
         myMethod(){
 
         },
+        getAllPosts() {
+            console.log('getAllPosts metoden')
+        }
     },
     computed: {
         myComputed() {
