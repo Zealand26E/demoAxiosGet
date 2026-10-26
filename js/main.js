@@ -3,7 +3,11 @@ const app = Vue.createApp({
         return {
             intro: 'Welcome to my Vue template',
             postslist: [],
-            postId: 3
+            postId: 3,
+            userId: 1,
+            id: 1,
+            title: '',
+            body: '',  
         }
     },
     methods: {
@@ -24,6 +28,12 @@ const app = Vue.createApp({
 
 
         },
+        addPost() {
+       console.log('addPost metoden')
+        
+        
+        }
+        ,
         getOnePost() {
             console.log('getOnePost metoden')
             axios.get(`https://jsonplaceholder.typicode.com/posts/${this.postId}`)

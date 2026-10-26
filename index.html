@@ -18,11 +18,24 @@
 
       <button v-on:click="getAllPosts" >Hent alle posts</button>
       <br />
-
-      <input v-model="postId" type="text" placeholder="Indtast post id" />
+            <input v-model="postId" type="text" placeholder="Indtast post id" />
       <br>
 
-      <button v-on:click="getOnePost" >Hent en post</button>
+
+    <button v-on:click="getOnePost" >Hent en post</button>
+
+<br>
+
+
+      <input v-model="userId" type="text" placeholder="Indtast user id" />
+      <br>
+      <input v-model="id" type="text" placeholder="Indtast id" />
+      <br>
+      <input v-model="title" type="text" placeholder="Indtast title" />
+      <br>
+      <input v-model="body" type="text" placeholder="Indtast body" />
+      <br>
+    <button v-on:click="addPost" >post en post</button>
 
       <ul>
         <li v-for="post in postslist" :key="post.id">
