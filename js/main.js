@@ -41,7 +41,11 @@ const app = Vue.createApp({
                     this.postslist = []
                     console.log("post id er " + this.postId)
                     console.log("statuskode " + response.status)
-                    console.log("response data" + response.data)  
+                    console.log("response data userid:" + response.data.userId)  
+                    console.log("response data id:" + response.data.id)  
+                    console.log("response data title:" + response.data.title)  
+                    console.log("response data body:" + response.data.body)  
+                    
                     this.postslist.push(response.data)
                     console.log("indehold af postslists " + this.postslist)
                     // Opdater postlisten med den nye post
